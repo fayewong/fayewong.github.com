@@ -1,10 +1,67 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <style>
+        body {
+            background-color: #1d1d1d;
+            margin: 0;
+            padding: 0;
+        }
+
+        #content {
+            background-color: #292929;
+            min-width: 500px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #navbar {
+            background-color: #292929;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        #navbar a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 9pt 14pt;
+            text-decoration: none;
+            font-size: 10pt;
+            font-weight: bold;
+        }
+
+        #navbar a:hover {
+            background-color: #3d3d3d;
+            color: #f2f2f2;
+        }
+
+        #navbar a.active {
+            background-color: #dddddd;
+            color: #292929;
+        }
+    </style>
     <title>Dot!Dot!Dot!</title>
 </head>
+
 <body>
-<center><p>Dot!Dot!Dot!</p></center>
+    <div id="content">
+        <div id="navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+        <center>
+            <p>Dot!Dot!Dot!</p>
+        </center>
+    </div>
+
 </body>
+
 </html>
